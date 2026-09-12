@@ -4,7 +4,11 @@ body1 {
 }
 
 header {
-    background-color: #350303;
+    background-color: #5f0b0b;
+    color: #b24c4c;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -24,11 +28,12 @@ main {
 }
 
 h1 {
-    color: #3d0404;
+    margin: 10px;
+    text-align: center;
 }
 
 h2 {
-    color: #3d0404;
+    border-bottom: #350303;
 }
 
 main img {
