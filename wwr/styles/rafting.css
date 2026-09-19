@@ -1,6 +1,5 @@
 :root {
     --primary-color: #3b7c94;
-    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -46,6 +45,12 @@ article {
 
 .socialmedia a {
     text-decoration: none;
+}
+
+.hero article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .hero {
