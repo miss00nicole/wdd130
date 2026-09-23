@@ -48,7 +48,7 @@ article {
 }
 
 .hero article {
-    position: absolute;
+    position: relative;
 }
 
 .hero > img {
@@ -57,8 +57,7 @@ article {
     height: auto;
 }
 
-.hero h1,
-.hero article {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -67,6 +66,10 @@ article {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero article img {
