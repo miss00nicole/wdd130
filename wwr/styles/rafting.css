@@ -164,7 +164,7 @@ h2 {
     height: 90px;
     object-fit: cover;
 
-    float: none;
+    float: right;
 }
 
 .hero article p {
