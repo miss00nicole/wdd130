@@ -133,8 +133,7 @@ h2 {
     width: 125px;
     height: 90px;
     object-fit: cover;
-
-    float: none;
+    float: right;
 }
 
 .hero article p {
@@ -189,10 +188,8 @@ h2 {
 
 .adventure {
     width: calc(100% - 32px);
-
     margin: 20px 16px;
     padding: 15px;
-
     border: 1px solid #aaa;
 }
 
@@ -201,7 +198,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-.adventure {
+.adventure-gallery {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
