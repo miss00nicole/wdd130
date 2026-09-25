@@ -6,17 +6,29 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* ------------------------------
+   RESET
+------------------------------ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ------------------------------
+   BODY
+------------------------------ */
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.5;
 }
+
+/* ------------------------------
+   HEADER
+------------------------------ */
 
 header {
     width: 840px;
@@ -37,6 +49,8 @@ header > img {
     height: 80px;
     object-fit: contain;
 }
+
+/* Navigation */
 
 nav {
     margin: 0;
@@ -70,16 +84,28 @@ nav {
     background-color: var(--accent2-color);
 }
 
+/* ------------------------------
+   MAIN
+------------------------------ */
+
 main {
     width: 840px;
     margin: 0 auto;
 }
+
+/* ------------------------------
+   HEADINGS
+------------------------------ */
 
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
+/* ------------------------------
+   HERO
+------------------------------ */
 
 .hero {
     position: relative;
@@ -93,6 +119,8 @@ h2 {
     height: 350px;
     object-fit: cover;
 }
+
+/* Hero title */
 
 .hero h1 {
     position: absolute;
@@ -111,6 +139,8 @@ h2 {
 
     opacity: 0.85;
 }
+
+/* Hero article */
 
 .hero article {
     position: absolute;
@@ -133,13 +163,18 @@ h2 {
     width: 125px;
     height: 90px;
     object-fit: cover;
-    float: right;
+
+    float: none;
 }
 
 .hero article p {
     margin: 0;
     padding: 0;
 }
+
+/* ------------------------------
+   HISTORY
+------------------------------ */
 
 .history {
     width: calc(100% - 32px);
@@ -150,10 +185,14 @@ h2 {
     border: 1px solid #aaa;
 }
 
+/* History heading */
+
 .history h2 {
     text-align: center;
     margin-bottom: 10px;
 }
+
+/* Three-column layout */
 
 .history-content {
     display: grid;
@@ -165,6 +204,8 @@ h2 {
     align-items: center;
 }
 
+/* History paragraphs */
+
 .history-content p {
     margin: 0;
     padding: 5px;
@@ -172,6 +213,8 @@ h2 {
     line-height: 1.5;
     font-size: 14px;
 }
+
+/* History image */
 
 .history-content img {
     display: block;
@@ -183,45 +226,53 @@ h2 {
     margin: 0 auto;
 
     object-fit: cover;
-
 }
+
+/* ------------------------------
+   ADVENTURE
+------------------------------ */
 
 .adventure {
     width: calc(100% - 32px);
+
     margin: 20px 16px;
     padding: 15px;
+
     border: 1px solid #aaa;
 }
 
 .adventure h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-.adventure-gallery {
+.adventure {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-.adventure-gallery figure {
+.adventure figure {
     flex: 1;
     margin: 0;
-    text-align: left;
+    padding: 0;
+    text-align: center;
 }
 
-.adventure-gallery img {
+.adventure img {
     width: 100%;
-    height: 180px;
+    height: 150px;
     object-fit: cover;
 }
 
-.adventure-gallery figcaption {
+.adventure figcaption {
     margin-top: 8px;
-
 }
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
 
 footer {
     width: 840px;
