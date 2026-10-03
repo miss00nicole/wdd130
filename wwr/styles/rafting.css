@@ -6,41 +6,35 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    RESET
------------------------------- */
-
+-------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    BODY
------------------------------- */
-
+-------------------------------------------------- */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     line-height: 1.5;
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    HEADER
------------------------------- */
-
+-------------------------------------------------- */
 header {
     width: 840px;
     margin: 0 auto;
-
     background-color: var(--primary-color);
     color: var(--accent2-color);
-
     display: grid;
     grid-template-columns: 120px 1fr;
     align-items: center;
-
     padding: 10px 20px;
 }
 
@@ -51,7 +45,6 @@ header > img {
 }
 
 /* Navigation */
-
 nav {
     margin: 0;
     padding: 0;
@@ -60,7 +53,6 @@ nav {
 .navigation {
     display: flex;
     justify-content: flex-end;
-
     list-style: none;
 }
 
@@ -69,13 +61,9 @@ nav {
 }
 
 .navigation a {
-    display: block;
-
     padding: 10px 20px;
-
     background-color: white;
     border: 1px solid #999;
-
     color: var(--accent1-color);
     text-decoration: none;
 }
@@ -84,18 +72,13 @@ nav {
     background-color: var(--accent2-color);
 }
 
-/* ------------------------------
-   MAIN
------------------------------- */
-
+/* --------------------------------------------------
+   MAIN & HEADINGS
+-------------------------------------------------- */
 main {
     width: 840px;
     margin: 0 auto;
 }
-
-/* ------------------------------
-   HEADINGS
------------------------------- */
 
 h1,
 h2 {
@@ -103,10 +86,9 @@ h2 {
     color: var(--primary-color);
 }
 
-/* ------------------------------
-   HERO
------------------------------- */
-
+/* --------------------------------------------------
+   HERO (About / Home Page)
+-------------------------------------------------- */
 .hero {
     position: relative;
     margin: 0;
@@ -121,187 +103,195 @@ h2 {
 }
 
 /* Hero title */
-
 .hero h1 {
     position: absolute;
-
     top: 20px;
     left: 0;
-
     width: 100%;
-
     padding: 16px;
-
     text-align: center;
-
     background-color: var(--accent1-color);
     color: white;
-
     opacity: 0.85;
 }
 
-/* Hero article */
+/* --------------------------------------------------
+   CONTACT US PAGE STYLES (contact.html)
+-------------------------------------------------- */
 
-.hero article {
-    position: absolute;
-
-    left: 40px;
-    right: 40px;
-    bottom: 30px;
-
-    margin: 0;
-    padding: 15px;
-
-    background-color: rgba(255, 255, 255, 0.9);
-
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.hero article img {
-    width: 125px;
-    height: 90px;
-    object-fit: cover;
-
-    float: right;
-}
-
-.hero article p {
-    margin: 0;
-    padding: 0;
-}
-
-/* ------------------------------
-   HISTORY
------------------------------- */
-
-.history {
-    width: calc(100% - 32px);
-
-    margin: 20px 16px;
-    padding: 15px;
-
-    border: 1px solid #aaa;
-}
-
-/* History heading */
-
-.history h2 {
+/* Main Header on Contact Page */
+main > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 1.5rem 0 0.5rem 0;
 }
 
-/* Three-column layout */
+/* Address & Phone Details */
+.address-details {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
 
-.history-content {
+.address-details p {
+    margin: 0.2rem 0;
+}
+
+/* Company Info Grid Section (Map + Form Side-by-Side) */
+.company-info {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
 
-    grid-template-columns: 1fr 1fr 1fr;
+/* Map Container Styling */
+.map-container iframe {
+    width: 100%;
+    height: 380px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    gap: 20px;
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
 
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-item label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+/* Radio Button Group Fieldset */
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 0 0.3rem;
+}
+
+.contact-form fieldset label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Checkbox Alignment */
+.checkbox-item {
+    flex-direction: row;
     align-items: center;
 }
 
-/* History paragraphs */
-
-.history-content p {
-    margin: 0;
-    padding: 5px;
-
-    line-height: 1.5;
-    font-size: 14px;
+.checkbox-item label {
+    font-weight: normal;
+    cursor: pointer;
 }
 
-/* History image */
-
-.history-content img {
-    display: block;
-
-    width: 100%;
-    max-width: 200px;
-    height: 110px;
-
-    margin: 0 auto;
-
-    object-fit: cover;
+/* Submit Button */
+.contact-form button[type="submit"] {
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-/* ------------------------------
-   ADVENTURE
------------------------------- */
-
-.adventure {
-    width: calc(100% - 32px);
-
-    margin: 20px 16px;
-    padding: 15px;
-
-    border: 1px solid #aaa;
+.contact-form button[type="submit"]:hover {
+    background-color: var(--accent1-color);
 }
 
-.adventure h2 {
+/* Employee Profiles Section */
+.employees {
     text-align: center;
-    margin-bottom: 10px;
+    padding: 1.5rem 0;
+    border-top: 1px solid #e0e0e0;
 }
 
-.adventure {
+.employees h2 {
+    margin-bottom: 1.5rem;
+}
+
+.employee-grid {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 15px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
 }
 
-.adventure figure {
-    flex: 1;
+.employee-grid figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
-.adventure img {
-    width: 100%;
-    height: 150px;
+.employee-grid img {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    background-color: #eee;
 }
 
-.adventure figcaption {
-    margin-top: 8px;
+.employee-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: 500;
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    FOOTER
------------------------------- */
-
+-------------------------------------------------- */
 footer {
     width: 840px;
-    margin: 20px auto;
-
-    padding: 15px;
-
-    border: 1px solid #aaa;
-
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
+    align-items: center;
 }
 
 .socialmedia {
     display: flex;
-    gap: 10px;
-}
-
-.socialmedia a {
-    text-decoration: none;
+    gap: 1rem;
 }
 
 .socialmedia img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
